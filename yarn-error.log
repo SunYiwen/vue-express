@@ -1,0 +1,54 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /home/syw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.9.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: http://registry.npm.taobao.org/cookie-parser: Invalid protocol: 127.0.0.1:
+      at Request.module.exports.Request.init (/usr/local/lib/node_modules/yarn/lib/cli.js:140733:31)
+      at new Request (/usr/local/lib/node_modules/yarn/lib/cli.js:140406:8)
+      at request (/usr/local/lib/node_modules/yarn/lib/cli.js:137312:10)
+      at RequestManager.execute (/usr/local/lib/node_modules/yarn/lib/cli.js:66882:15)
+      at RequestManager.shiftQueue (/usr/local/lib/node_modules/yarn/lib/cli.js:66920:10)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:66599:13
+      at new Promise (<anonymous>)
+      at new F (/usr/local/lib/node_modules/yarn/lib/cli.js:5296:28)
+      at RequestManager.request (/usr/local/lib/node_modules/yarn/lib/cli.js:66597:19)
+      at NpmRegistry.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:31694:42)
+
+npm manifest: 
+  {
+    "name": "blog",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "debug": "~2.6.9",
+      "express": "~4.16.1",
+      "http-errors": "~1.6.3",
+      "jade": "~1.11.0",
+      "morgan": "~1.9.1"
+    },
+    "devDependencies": {
+      "webpack-cli": "^3.3.11"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
