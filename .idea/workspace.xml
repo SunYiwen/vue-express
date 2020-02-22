@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c537cca-ed18-444d-bb5d-efb3b33fee83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front-end/http.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/assets/bread-on.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/components/Blog.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/components/Footer.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/components/Header.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/components/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/Passage.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/views/Tags.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/views/Types.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/passage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/tag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/type.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end" beforeDir="false" afterPath="$PROJECT_DIR$/front-end" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.vue" afterDir="false" />
@@ -18,6 +25,9 @@
       <change beforePath="$PROJECT_DIR$/front-end/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/views/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -44,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/front-end/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue/quiz" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,6 +71,21 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front-end/src/assets" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-end/src/assets/icons" />
+      <recent name="$PROJECT_DIR$/public/javascripts" />
+      <recent name="$PROJECT_DIR$/public/javascripts/mongodb" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/public/javascripts/mongodb/test.js" working-dir="$PROJECT_DIR$/public/javascripts/mongodb">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -72,7 +98,12 @@
       <option name="presentableId" value="Default" />
       <updated>1581758231367</updated>
       <workItem from="1581758233451" duration="9189000" />
-      <workItem from="1581767982603" duration="3850000" />
+      <workItem from="1581767982603" duration="4461000" />
+      <workItem from="1581822649028" duration="159000" />
+      <workItem from="1582271517711" duration="6924000" />
+      <workItem from="1582292797760" duration="623000" />
+      <workItem from="1582354567221" duration="4492000" />
+      <workItem from="1582359082840" duration="4941000" />
     </task>
     <servers />
   </component>
@@ -80,33 +111,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="136" width="1000" height="841" key="#ESLint" timestamp="1581776653723">
+    <state x="488" y="136" width="1000" height="845" key="#ESLint" timestamp="1582359334045">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state x="488" y="136" width="1000" height="841" key="#ESLint/67.34.1853.1046@67.34.1853.1046" timestamp="1581776653723" />
-    <state x="635" y="337" width="707" height="440" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581760535724">
+    <state x="488" y="136" width="1000" height="845" key="#ESLint/67.34.1853.1046@67.34.1853.1046" timestamp="1582359334045" />
+    <state x="635" y="337" width="707" height="440" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582359670632">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state x="635" y="337" width="707" height="440" key="#com.intellij.fileTypes.FileTypeChooser/67.34.1853.1046@67.34.1853.1046" timestamp="1581760535724" />
-    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl" timestamp="1581767865038">
+    <state x="635" y="337" width="707" height="440" key="#com.intellij.fileTypes.FileTypeChooser/67.34.1853.1046@67.34.1853.1046" timestamp="1582359670632" />
+    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl" timestamp="1582357081889">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl/67.34.1853.1046@67.34.1853.1046" timestamp="1581767865038" />
-    <state width="1821" height="259" key="GridCell.Tab.0.bottom" timestamp="1581769632461">
+    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl/67.34.1853.1046@67.34.1853.1046" timestamp="1582357081889" />
+    <state width="1821" height="403" key="GridCell.Tab.0.bottom" timestamp="1582360399127">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state width="1821" height="259" key="GridCell.Tab.0.bottom/67.34.1853.1046@67.34.1853.1046" timestamp="1581769632461" />
-    <state width="1821" height="259" key="GridCell.Tab.0.center" timestamp="1581769632461">
+    <state width="1821" height="403" key="GridCell.Tab.0.bottom/67.34.1853.1046@67.34.1853.1046" timestamp="1582360399127" />
+    <state width="1821" height="403" key="GridCell.Tab.0.center" timestamp="1582360399126">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state width="1821" height="259" key="GridCell.Tab.0.center/67.34.1853.1046@67.34.1853.1046" timestamp="1581769632461" />
-    <state width="1821" height="259" key="GridCell.Tab.0.left" timestamp="1581769632460">
+    <state width="1821" height="403" key="GridCell.Tab.0.center/67.34.1853.1046@67.34.1853.1046" timestamp="1582360399126" />
+    <state width="1821" height="403" key="GridCell.Tab.0.left" timestamp="1582360399126">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state width="1821" height="259" key="GridCell.Tab.0.left/67.34.1853.1046@67.34.1853.1046" timestamp="1581769632460" />
-    <state width="1821" height="259" key="GridCell.Tab.0.right" timestamp="1581769632461">
+    <state width="1821" height="403" key="GridCell.Tab.0.left/67.34.1853.1046@67.34.1853.1046" timestamp="1582360399126" />
+    <state width="1821" height="403" key="GridCell.Tab.0.right" timestamp="1582360399126">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state width="1821" height="259" key="GridCell.Tab.0.right/67.34.1853.1046@67.34.1853.1046" timestamp="1581769632461" />
+    <state width="1821" height="403" key="GridCell.Tab.0.right/67.34.1853.1046@67.34.1853.1046" timestamp="1582360399126" />
+    <state x="572" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1582290882466">
+      <screen x="67" y="34" width="1853" height="1046" />
+    </state>
+    <state x="572" y="45" width="840" height="1034" key="search.everywhere.popup/67.34.1853.1046@67.34.1853.1046" timestamp="1582290882466" />
   </component>
 </project>
