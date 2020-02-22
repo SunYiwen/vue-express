@@ -11,10 +11,7 @@
       <change afterPath="$PROJECT_DIR$/front-end/src/components/Passage.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/views/Tags.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/front-end/src/views/Types.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/passage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/tag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end" beforeDir="false" afterPath="$PROJECT_DIR$/front-end" afterDir="false" />
@@ -25,9 +22,6 @@
       <change beforePath="$PROJECT_DIR$/front-end/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/views/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue/quiz" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebstormProjects/crud_mongo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -103,7 +97,9 @@
       <workItem from="1582271517711" duration="6924000" />
       <workItem from="1582292797760" duration="623000" />
       <workItem from="1582354567221" duration="4492000" />
-      <workItem from="1582359082840" duration="4941000" />
+      <workItem from="1582359082840" duration="5161000" />
+      <workItem from="1582366090455" duration="1902000" />
+      <workItem from="1582376953910" duration="2873000" />
     </task>
     <servers />
   </component>
@@ -111,18 +107,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="136" width="1000" height="845" key="#ESLint" timestamp="1582359334045">
+    <state x="488" y="136" width="1000" height="847" key="#ESLint" timestamp="1582378804760">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state x="488" y="136" width="1000" height="845" key="#ESLint/67.34.1853.1046@67.34.1853.1046" timestamp="1582359334045" />
+    <state x="488" y="136" width="1000" height="847" key="#ESLint/67.34.1853.1046@67.34.1853.1046" timestamp="1582378804760" />
     <state x="635" y="337" width="707" height="440" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582359670632">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
     <state x="635" y="337" width="707" height="440" key="#com.intellij.fileTypes.FileTypeChooser/67.34.1853.1046@67.34.1853.1046" timestamp="1582359670632" />
-    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl" timestamp="1582357081889">
+    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl" timestamp="1582377920279">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl/67.34.1853.1046@67.34.1853.1046" timestamp="1582357081889" />
+    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl/67.34.1853.1046@67.34.1853.1046" timestamp="1582377920279" />
     <state width="1821" height="403" key="GridCell.Tab.0.bottom" timestamp="1582360399127">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
