@@ -1,6 +1,10 @@
 # back-end
+```sh
 npm start
+```
 
-#front-end
+# front-end
+```sh
 cd front-end
 yarn serve
+```
