@@ -42,6 +42,7 @@
 <script>
 import Header from './components/Header'
 import Footer from './components/Footer'
+import './assets/darcula.css'
 export default {
   components: { Footer, Header }
 }

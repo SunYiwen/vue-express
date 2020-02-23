@@ -1,7 +1,6 @@
 <template>
   <div class="blog">
-    <h1 >Blog</h1>
-    <p>{{ passage.content }}</p>
+    <div v-html="passage" class="inner_container"></div>
   </div>
 </template>
 
@@ -32,5 +31,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
