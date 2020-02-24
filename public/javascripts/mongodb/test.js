@@ -1,42 +1,58 @@
 let Passage = require('./passage')
-// let passage = {
-//   id:3,
-//   content:" # 利用art-template动态渲染文本\n" +
-//     "\n" +
-//     "## 1. 在html中使用模板引擎进行遍历渲染\n" +
-//     "\n" +
-//     "```html\n" +
-//     "{{each files}}\n" +
-//     " <tr>\n" +
-//     "     <th scope=\"row\">{{ $index }}</th>\n" +
-//     " \t <td>{{ $value }}</td>\n" +
-//     " </tr>\n" +
-//     " {{/each}}\n" +
-//     "```\n" +
-//     "\n" +
-//     "files:遍历的对象\n" +
-//     "\n" +
-//     "$index:遍历的序号，从0开始\n" +
-//     "\n" +
-//     "$value:遍历的内容\n" +
-//     "\n" +
-//     "## 2. 在服务器端使用模板引擎\n" +
-//     "\n" +
-//     "```js\n" +
-//     "var template=require('art-template')//引入模板引擎\n" +
-//     "var data=template.render(data.toString(),{\n" +
-//     "    files:files\n" +
-//     "})\n" +
-//     "response.end(data)\n" +
-//     "```\n" +
-//     "\n",
-//   create_time: "2020-2-19",
-//   description: "利用art-template动态渲染文本",
-//   published:true,
-//   title: "利用art-template动态渲染文本",
-//   type_id:1,
-//   tag_id: 2
+let Type = require('./type')
+let Tag = require('./tag')
+// let tag ={
+//   tag_id: 3,
+//   tag_name: 'hhh'
 // }
+// Tag.find(function (err,ret) {
+//   if(err){
+//     console.log(err)
+//   }
+//   else{
+//     console.log(ret)
+//   }
+// })
+// new Tag(tag).save(function (err) {
+//   if(err){
+//     console.log(err)
+//   }
+//   else{
+//     console.log('保存成功！')
+//   }
+// })
+// let type = {
+//   type_id: 3,
+//   type_name: 'Algorithm'
+// }
+// new Tag(tag).save(function (err) {
+//   if(err){
+//     console.log(err)
+//   }
+//   else{
+//     console.log('保存成功！')
+//   }
+// })
+// new Type(type).save(function (err) {
+//   if(err){
+//     console.log(err)
+//   }
+//   else{
+//     console.log('保存成功！')
+//   }
+// })
+
+// let passage = {
+//   id:4,
+//   content:"## 1. 什么是AJAX?\n" +
+//     "\n",
+//   description: "AJAX: Asynchronous Javascript +XML ,也就是异步的JS和XML.",
+//   published:true,
+//   title: "利用art-template动态渲染文本 AJAX",
+//   type_id:2,
+//   tag_id: 3
+// }
+// passage.create_time = new Date()
 //   new Passage(passage).save(function (err) {
 //     if (err) {
 //       console.log(err)
@@ -52,6 +68,6 @@ let Passage = require('./passage')
 //     console.log((ret));
 //   }
 // })
-// Passage.deleteOne({_id:'5e4fdccf0437811a5c53f000'},function (err) {
+// Passage.deleteOne({_id:'5e5329994c128129867fa672'},function (err) {
 //   if(err){}
 // })

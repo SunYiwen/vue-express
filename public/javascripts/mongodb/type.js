@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost:27017/blog', {useNewUrlParser: true, useUnifiedTopology: true});
 const Schema = mongoose.Schema
-const TagSchema = new Schema({
+const TypeSchema = new Schema({
   type_id:{
     type: Number,
     required:true
@@ -12,6 +12,6 @@ const TagSchema = new Schema({
   }
 })
 
-module.exports = mongoose.model('Tag',TagSchema)
+module.exports = mongoose.model('Type',TypeSchema)
 
 

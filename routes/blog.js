@@ -17,23 +17,17 @@ var md = require('markdown-it')({
     return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
   }
 });
-router.get('/blog', function(req, res, next) {
+router.get('/blog',function (req,res,next) {
   let id = req.query.id
   Passage.findOne({
-    id:id
-  },function (err,passage) {
-    if(err){
-      console.log(err)
-    }
-    else{
-      //console.log(passage)
-      // let results = md.render(passage.content)
-      // console.log(results)
-      res.send(md.render(passage.content))
-    }
-
-
+    id: id
   })
-});
+    .then(function(passage){
+      res.send({
+        content:md.render(passage.content),
+        title: passage.title
+      })
+    })
+})
 
 module.exports = router;
