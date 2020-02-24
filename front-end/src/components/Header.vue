@@ -47,7 +47,7 @@ export default {
   }
   .nav-link {
     display: block;
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 3.5rem;
   }
 
 </style>

@@ -8,7 +8,7 @@
       <li><b-icon-eye></b-icon-eye>{{ passage.read_Time}}</li>
     </ul>
     <p class="description">{{ passage.description }}...</p>
-    <a class="link_more"  v-on:click="showBlog">read more-></a>
+    <a class="link_more"  v-on:click="showBlog">Read more >></a>
     <hr/>
   </div>
 </template>
@@ -23,8 +23,6 @@ export default {
   },
   data () {
     return {
-      // typeName: '',
-      // tagName: ''
     }
   },
   mounted () {

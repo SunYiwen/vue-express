@@ -1,18 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <Header></Header>
-    </div>
-    <b-container>
       <router-view/>
-    </b-container>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <div id="footer">
-      <Footer></Footer>
-    </div>
   </div>
 </template>
 
@@ -38,12 +26,25 @@
     }
   }
 }
+h2{
+  font-size: 1.5em!important;
+  border-bottom: 1px dotted #eee!important;
+  word-break: break-word!important;
+  font-weight: 400!important;
+}
+h3{
+  font-size: 1.3em!important;
+  border-bottom: 1px dotted #eee!important;
+  word-break: break-word!important;
+  font-weight: 400!important;
+}
+p{
+  font-size: 17px;
+  margin: 0 0 20px 0;
+}
 </style>
 <script>
-import Header from './components/Header'
-import Footer from './components/Footer'
 import './assets/darcula.css'
 export default {
-  components: { Footer, Header }
 }
 </script>
