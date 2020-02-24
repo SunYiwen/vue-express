@@ -2,7 +2,7 @@ let Passage = require('./passage')
 let Type = require('./type')
 let Tag = require('./tag')
 // let tag ={
-//   tag_id: 3,
+//   tag_id: 4,
 //   tag_name: 'hhh'
 // }
 // Tag.find(function (err,ret) {
@@ -43,7 +43,7 @@ let Tag = require('./tag')
 // })
 
 // let passage = {
-//   id:4,
+//   id:5,
 //   content:"## 1. 什么是AJAX?\n" +
 //     "\n",
 //   description: "AJAX: Asynchronous Javascript +XML ,也就是异步的JS和XML.",
@@ -60,13 +60,26 @@ let Tag = require('./tag')
 //       console.log('保存成功')
 //     }
 //   })
-// Passage.find(function (err,ret) {
+Passage.find(function (err,ret) {
+  if(err){
+    console.log(err);
+  }
+  else{
+    console.log((ret));
+  }
+})
+// Passage.updateOne({
+//   id:5
+// },{
+//   read_Time:5
+// },function (err) {
 //   if(err){
-//     console.log(err);
+//     console.log(err)
 //   }
 //   else{
-//     console.log((ret));
+//     console.log('跟新成功')
 //   }
+//
 // })
 // Passage.deleteOne({_id:'5e5329994c128129867fa672'},function (err) {
 //   if(err){}

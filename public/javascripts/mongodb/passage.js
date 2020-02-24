@@ -29,6 +29,10 @@ const PassageSchema = new Schema({
   },
   tag_id:{
     type: Number
+  },
+  read_Time:{
+    type:Number,
+    default: 0
   }
 })
 

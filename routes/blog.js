@@ -27,6 +27,14 @@ router.get('/blog',function (req,res,next) {
         content:md.render(passage.content),
         title: passage.title
       })
+      return Passage.updateOne(
+        {
+          id:id
+        },
+        {
+          read_Time: passage.read_Time+1
+        }
+      )
     })
 })
 

@@ -5,7 +5,7 @@
       <li><b-icon-calendar></b-icon-calendar>{{ create_time }}</li>
       <li><b-icon-folder></b-icon-folder>{{ getTypeName }}</li>
       <li><b-icon-tag></b-icon-tag>{{ getTagName }}</li>
-      <li><b-icon-eye></b-icon-eye>12</li>
+      <li><b-icon-eye></b-icon-eye>{{ passage.read_Time}}</li>
     </ul>
     <p class="description">{{ passage.description }}...</p>
     <a class="link_more"  v-on:click="showBlog">read more-></a>
