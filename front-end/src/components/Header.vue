@@ -43,7 +43,9 @@ export default {
     font-family: 'Lemonada', cursive;
     font-family: 'Barlow', sans-serif;
     font-size: 20px;
+    margin: 0 auto;
     margin-top: 3%;
+    padding-left: 10%;
   }
   .nav-link {
     display: block;

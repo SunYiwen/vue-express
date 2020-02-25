@@ -6,10 +6,17 @@ import Types from '../views/Types'
 import Tags from '../views/Tags'
 import Login from '../components/Login'
 import Blog from '../components/Blog'
-
+import AdminHome from '../views/admin/AdminHome'
+import AdminBlog from '../views/admin/AdminBlog'
+import AdminTags from '../views/admin/AdminTags'
+import AdminTypes from '../views/admin/AdminTypes'
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    redirect: '/home'
+  },
   {
     path: '/home',
     name: 'Home',
@@ -39,8 +46,33 @@ const routes = [
     path: '/blog/:id',
     name: 'blog',
     component: Blog
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: AdminHome,
+    children: [
+      {
+        path: 'blogs',
+        name: 'adminblogs',
+        component: AdminBlog
+      },
+      {
+        path: 'home',
+        redirect: '/admin'
+      },
+      {
+        path: 'types',
+        name: 'admintypes',
+        component: AdminTypes
+      },
+      {
+        path: 'tags',
+        name: 'admintags',
+        component: AdminTags
+      }
+    ]
   }
-
 ]
 
 const router = new VueRouter({

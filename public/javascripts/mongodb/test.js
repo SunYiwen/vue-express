@@ -1,6 +1,20 @@
 let Passage = require('./passage')
 let Type = require('./type')
 let Tag = require('./tag')
+let User = require('./user')
+let user={
+  username:'syw',
+  password:'syw'
+}
+new User(user).save(function (err) {
+  if(err){
+    console.log(err)
+  }
+  else{
+    console.log('保存成功！')
+  }
+
+})
 // let tag ={
 //   tag_id: 4,
 //   tag_name: 'hhh'

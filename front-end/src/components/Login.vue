@@ -26,6 +26,7 @@
 </template>
 
 <script>
+const https = require('../../http.js')
 export default {
   name: 'Login',
   data () {
@@ -33,11 +34,22 @@ export default {
     return {
       url: urls,
       username: '',
-      password: ''
+      password: '',
+      success: false
     }
   },
   methods: {
     tryLogin (e) {
+      const that = this
+      https.fetchPost('/user', {
+        username: this.username,
+        password: this.password
+      })
+        .then(function (ret) {
+          if (ret.data) {
+            that.$router.push('/admin')
+          }
+        })
       e.preventDefault()
     }
   }
