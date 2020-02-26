@@ -29,11 +29,11 @@ export default {
     https.fetchGet('/')
       .then((passages) => {
         this.passages = passages.reverse()
-        return https.fetchGet('/type')
+        return https.fetchGet('/types')
       })
       .then((types) => {
         this.types = types
-        return https.fetchGet('tag')
+        return https.fetchGet('/tags')
       })
       .then((tags) => {
         this.tags = tags

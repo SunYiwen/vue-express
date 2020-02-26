@@ -10,6 +10,7 @@ import AdminHome from '../views/admin/AdminHome'
 import AdminBlog from '../views/admin/AdminBlog'
 import AdminTags from '../views/admin/AdminTags'
 import AdminTypes from '../views/admin/AdminTypes'
+import Welcome from '../components/Welcome'
 Vue.use(VueRouter)
 
 const routes = [
@@ -50,6 +51,7 @@ const routes = [
   {
     path: '/admin',
     name: 'admin',
+    redirect: '/admin/home',
     component: AdminHome,
     children: [
       {
@@ -59,7 +61,7 @@ const routes = [
       },
       {
         path: 'home',
-        redirect: '/admin'
+        component: Welcome
       },
       {
         path: 'types',
