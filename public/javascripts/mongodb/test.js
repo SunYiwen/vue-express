@@ -74,13 +74,13 @@ new Type(type).save(function (err) {
 //     } else {
 //       console.log('保存成功')
 //     }
-//   })
+// //   })
 // Passage.find(function (err,ret) {
 //   if(err){
 //     console.log(err);
 //   }
 //   else{
-//     console.log((ret));
+//     console.log('results:'+[...ret]);
 //   }
 // })
 // Passage.updateOne({

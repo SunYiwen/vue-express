@@ -2,7 +2,13 @@
     <div>
       <b-container>
         <h1>New Blog</h1>
-        <mavon-editor v-model="value"/>
+        <b-input-group prepend="Title:" class="mb-2 mr-sm-2 mb-sm-0">
+          <b-input v-model="title"></b-input>
+        </b-input-group>
+        <mavon-editor v-model="content" v-on:save="saveBlog"/>
+        <b-input-group prepend="Description:" class="mb-2 mr-sm-2 mb-sm-0">
+          <b-input v-model="description"></b-input>
+        </b-input-group>
         <br/>
         <br/>
         <br/>
@@ -11,11 +17,30 @@
 </template>
 
 <script>
+const https = require('../../http.js')
 export default {
   name: 'BlogNew',
   data () {
     return {
-      value: ''
+      content: '',
+      title: '',
+      description: ''
+    }
+  },
+  methods: {
+    saveBlog: function () {
+      // console.log('blog:' + typeof this.title)
+      https.fetchPost('/blogs/new', {
+        title: this.title,
+        content: this.content,
+        description: this.description
+      })
+        .then(function (ret) {
+          console.log(ret)
+        })
+        .catch(function (err) {
+          console.log(err)
+        })
     }
   }
 }
