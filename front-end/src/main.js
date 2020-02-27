@@ -7,9 +7,12 @@ import axios from 'axios'
 import QS from 'qs'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
 
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
+Vue.use(mavonEditor)
 
 Vue.prototype.$axios = axios
 Vue.prototype.qs = QS

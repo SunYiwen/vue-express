@@ -36,7 +36,7 @@ let User = require('./user')
 //   }
 // })
 let type = {
-  type_id: 6,
+  type_id: 3,
   type_name: 'Nodejs'
 }
 // new Tag(tag).save(function (err) {
@@ -53,7 +53,7 @@ new Type(type).save(function (err) {
   }
   else{
 
-    console.log('ppp')
+    console.log('保存成功！')
   }
 })
 // console.log('hhh')
