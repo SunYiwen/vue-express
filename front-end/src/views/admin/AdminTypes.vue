@@ -55,11 +55,8 @@ export default {
         .then(function (ret) {
           console.log(ret.data)
           if (ret.data) {
-            that.$router.push({
-              path: '/admin/types'
-            })
-              // eslint-disable-next-line no-unused-expressions
-              .catch(err => { err })
+            that.$router.go(0)
+            //  too ugly
           }
         })
         .catch(function (err) {

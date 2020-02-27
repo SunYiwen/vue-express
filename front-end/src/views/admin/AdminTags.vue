@@ -18,7 +18,7 @@
             <th scope="row">{{ index }}</th>
             <td>{{ tag.tag_id }}</td>
             <td>{{ tag.tag_name }}</td>
-            <td><a v-bind:href="'/admin/tags/delete?id='+tag.tag_id" role="button">删除</a></td>
+            <td><a role="button" v-on:click="deleteTags(tag.tag_id)">删除</a></td>
             <td><a href="#" role="button">修改</a></td>
           </tr>
           </tbody>
@@ -44,6 +44,24 @@ export default {
       .catch((err) => {
         console.log(err)
       })
+  },
+  methods: {
+    deleteTags: function (id) {
+      const that = this
+      console.log(id)
+      https.fetchPost('/tags/delete', {
+        id: id
+      })
+        .then(function (ret) {
+          console.log(ret.data)
+          if (ret.data) {
+            that.$router.go(0)
+          }
+        })
+        .catch(function (err) {
+          console.log(err)
+        })
+    }
   }
 }
 </script>

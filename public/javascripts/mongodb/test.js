@@ -15,10 +15,10 @@ let User = require('./user')
 //   }
 //
 // })
-let tag ={
-  tag_id: 5,
-  tag_name: 'hhlalh'
-}
+// let tag ={
+//   tag_id: 5,
+//   tag_name: 'hhlalh'
+// }
 // Tag.find(function (err,ret) {
 //   if(err){
 //     console.log(err)
@@ -35,27 +35,27 @@ let tag ={
 //     console.log('保存成功！')
 //   }
 // })
-// let type = {
-//   type_id: 2,
-//   type_name: 'Nodejs'
-// }
-new Tag(tag).save(function (err) {
-  if(err){
-    console.log(err)
-  }
-  else{
-    console.log('保存成功！')
-  }
-})
-// new Type(type).save(function (err) {
+let type = {
+  type_id: 6,
+  type_name: 'Nodejs'
+}
+// new Tag(tag).save(function (err) {
 //   if(err){
-//     console.log('hh'+err)
+//     console.log(err)
 //   }
 //   else{
-//
-//     console.log('ppp')
+//     console.log('保存成功！')
 //   }
 // })
+new Type(type).save(function (err) {
+  if(err){
+    console.log('hh'+err)
+  }
+  else{
+
+    console.log('ppp')
+  }
+})
 // console.log('hhh')
 // let passage = {
 //   id:5,
