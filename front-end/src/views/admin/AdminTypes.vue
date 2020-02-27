@@ -18,7 +18,7 @@
           <th scope="row">{{ index }}</th>
           <td>{{ type.type_id }}</td>
           <td>{{ type.type_name }}</td>
-          <td><a href="#" role="button">删除</a></td>
+          <td><a role="button" v-on:click="deleteTypes(type.type_id)">删除</a></td>
           <td><a href="#" role="button">修改</a></td>
         </tr>
         </tbody>
@@ -44,6 +44,28 @@ export default {
       .catch((err) => {
         console.log(err)
       })
+  },
+  methods: {
+    deleteTypes: function (id) {
+      const that = this
+      console.log(id)
+      https.fetchPost('/types/delete', {
+        id: id
+      })
+        .then(function (ret) {
+          console.log(ret.data)
+          if (ret.data) {
+            that.$router.push({
+              path: '/admin/types'
+            })
+              // eslint-disable-next-line no-unused-expressions
+              .catch(err => { err })
+          }
+        })
+        .catch(function (err) {
+          console.log(err)
+        })
+    }
   }
 
 }

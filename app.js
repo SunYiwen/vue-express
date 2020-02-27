@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var blogRouter = require('./routes/blog');
 var typeRouter = require('./routes/type');
 var tagRouter = require('./routes/tag');
+var typeDeleteRouter = require('./routes/types/delete');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use('/', usersRouter);
 app.use('/',blogRouter);
 app.use('/',typeRouter);
 app.use('/',tagRouter);
+app.use('/types',typeDeleteRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

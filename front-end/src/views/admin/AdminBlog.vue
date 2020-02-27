@@ -18,7 +18,7 @@
         <th scope="row">{{ index }}</th>
         <td>{{ blog.id }}</td>
         <td>{{ blog.title }}</td>
-        <td><a href="#" role="button">删除</a></td>
+        <td><a v-bind:href="'/admin/blogs/delete?id='+blog.id"  role="button">删除</a></td>
         <td><a href="#" role="button">修改</a></td>
       </tr>
       </tbody>

@@ -2,23 +2,23 @@ let Passage = require('./passage')
 let Type = require('./type')
 let Tag = require('./tag')
 let User = require('./user')
-let user={
-  username:'syw',
-  password:'syw'
-}
-new User(user).save(function (err) {
-  if(err){
-    console.log(err)
-  }
-  else{
-    console.log('保存成功！')
-  }
-
-})
-// let tag ={
-//   tag_id: 4,
-//   tag_name: 'hhh'
+// let user={
+//   username:'syw',
+//   password:'syw'
 // }
+// new User(user).save(function (err) {
+//   if(err){
+//     console.log(err)
+//   }
+//   else{
+//     console.log('保存成功！')
+//   }
+//
+// })
+let tag ={
+  tag_id: 5,
+  tag_name: 'hhlalh'
+}
 // Tag.find(function (err,ret) {
 //   if(err){
 //     console.log(err)
@@ -36,26 +36,27 @@ new User(user).save(function (err) {
 //   }
 // })
 // let type = {
-//   type_id: 3,
-//   type_name: 'Algorithm'
+//   type_id: 2,
+//   type_name: 'Nodejs'
 // }
-// new Tag(tag).save(function (err) {
-//   if(err){
-//     console.log(err)
-//   }
-//   else{
-//     console.log('保存成功！')
-//   }
-// })
+new Tag(tag).save(function (err) {
+  if(err){
+    console.log(err)
+  }
+  else{
+    console.log('保存成功！')
+  }
+})
 // new Type(type).save(function (err) {
 //   if(err){
-//     console.log(err)
+//     console.log('hh'+err)
 //   }
 //   else{
-//     console.log('保存成功！')
+//
+//     console.log('ppp')
 //   }
 // })
-
+// console.log('hhh')
 // let passage = {
 //   id:5,
 //   content:"## 1. 什么是AJAX?\n" +
@@ -74,14 +75,14 @@ new User(user).save(function (err) {
 //       console.log('保存成功')
 //     }
 //   })
-Passage.find(function (err,ret) {
-  if(err){
-    console.log(err);
-  }
-  else{
-    console.log((ret));
-  }
-})
+// Passage.find(function (err,ret) {
+//   if(err){
+//     console.log(err);
+//   }
+//   else{
+//     console.log((ret));
+//   }
+// })
 // Passage.updateOne({
 //   id:5
 // },{
