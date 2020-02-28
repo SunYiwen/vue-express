@@ -35,10 +35,10 @@ let User = require('./user')
 //     console.log('保存成功！')
 //   }
 // })
-let type = {
-  type_id: 3,
-  type_name: 'Nodejs'
-}
+// let type = {
+//   type_id: 3,
+//   type_name: 'Nodejs'
+// }
 // new Tag(tag).save(function (err) {
 //   if(err){
 //     console.log(err)
@@ -47,15 +47,15 @@ let type = {
 //     console.log('保存成功！')
 //   }
 // })
-new Type(type).save(function (err) {
-  if(err){
-    console.log('hh'+err)
-  }
-  else{
-
-    console.log('保存成功！')
-  }
-})
+// new Type(type).save(function (err) {
+//   if(err){
+//     console.log('hh'+err)
+//   }
+//   else{
+//
+//     console.log('保存成功！')
+//   }
+// })
 // console.log('hhh')
 // let passage = {
 //   id:5,
@@ -75,14 +75,14 @@ new Type(type).save(function (err) {
 //       console.log('保存成功')
 //     }
 // //   })
-// Passage.find(function (err,ret) {
-//   if(err){
-//     console.log(err);
-//   }
-//   else{
-//     console.log('results:'+[...ret]);
-//   }
-// })
+Passage.find(function (err,ret) {
+  if(err){
+    console.log(err);
+  }
+  else{
+    console.log('results:'+typeof ret[3].id);
+  }
+})
 // Passage.updateOne({
 //   id:5
 // },{

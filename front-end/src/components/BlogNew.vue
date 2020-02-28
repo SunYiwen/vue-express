@@ -36,7 +36,10 @@ export default {
         description: this.description
       })
         .then(function (ret) {
-          console.log(ret)
+          console.log(ret.data)
+          if (ret.data) {
+            alert('保存成功！')
+          }
         })
         .catch(function (err) {
           console.log(err)

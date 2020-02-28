@@ -10,17 +10,22 @@ router.post('/new', function(req, res, next) {
     content: req.body.content,
     description: req.body.description,
     tag_id:2,
-    type_id:4,
-    id:10
+    type_id:4
   }
   passage.create_time = new Date()
-  new Passage(passage).save()
+  Passage.find()
+    .then(function (ret) {
+      let id = ret[ret.length-1].id+1
+      passage.id = id
+      return new Passage(passage).save()
+    })
     .then(function (ret) {
       console.log(ret)
-      res.send('hhh')
+      res.send(true)
     })
     .catch(function (err) {
       console.log(err)
+      res.send(false)
     })
 });
 
