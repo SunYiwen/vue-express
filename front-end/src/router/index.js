@@ -15,6 +15,8 @@ import BlogNew from '../components/BlogNew'
 import TypeNew from '../components/TypeNew'
 import TagNew from '../components/TagNew'
 import BlogUpdate from '../components/BlogUpdate'
+import TagUpdate from '../components/TagUpdate'
+import TypeUpdate from '../components/TypeUpdate'
 Vue.use(VueRouter)
 
 const routes = [
@@ -71,6 +73,16 @@ const routes = [
     path: '/admin/blogs/update/:id',
     name: 'blogupdate',
     component: BlogUpdate
+  },
+  {
+    path: '/admin/tags/update/:id',
+    name: 'tagupdate',
+    component: TagUpdate
+  },
+  {
+    path: '/admin/types/update/:id',
+    name: 'typeupdate',
+    component: TypeUpdate
   },
   {
     path: '/admin',

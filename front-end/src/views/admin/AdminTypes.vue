@@ -19,7 +19,7 @@
           <td>{{ type.type_id }}</td>
           <td>{{ type.type_name }}</td>
           <td><a role="button" v-on:click="deleteTypes(type.type_id)">删除</a></td>
-          <td><a href="#" role="button">修改</a></td>
+          <td><a role="button" v-on:click="updateType(type.type_id)">修改</a></td>
         </tr>
         </tbody>
       </table>
@@ -62,6 +62,11 @@ export default {
         .catch(function (err) {
           console.log(err)
         })
+    },
+    updateType: function (id) {
+      return this.$router.push({
+        path: '/admin/types/update/' + id
+      })
     }
   }
 

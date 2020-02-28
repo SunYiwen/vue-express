@@ -31,7 +31,7 @@ export default {
   methods: {
     saveBlog: function () {
       // console.log('blog:' + typeof this.title)
-      https.fetchPost('/blogs/update', {
+      https.fetchPost('/tags/update', {
         title: this.title,
         content: this.content,
         description: this.description,

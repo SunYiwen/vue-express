@@ -19,7 +19,7 @@
             <td>{{ tag.tag_id }}</td>
             <td>{{ tag.tag_name }}</td>
             <td><a role="button" v-on:click="deleteTags(tag.tag_id)">删除</a></td>
-            <td><a href="#" role="button">修改</a></td>
+            <td><a role="button" v-on:click="updateTag(tag.tag_id)">修改</a></td>
           </tr>
           </tbody>
         </table>
@@ -61,8 +61,14 @@ export default {
         .catch(function (err) {
           console.log(err)
         })
+    },
+    updateTag: function (id) {
+      return this.$router.push({
+        path: '/admin/tags/update/' + id
+      })
     }
   }
+
 }
 </script>
 
