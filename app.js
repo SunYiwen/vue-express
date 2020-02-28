@@ -13,6 +13,7 @@ var typeDeleteRouter = require('./routes/types/delete');
 var tagDeleteRouter = require('./routes/tags/delete');
 var blogDeleteRouter = require('./routes/blogs/delete');
 var blogNewRouter = require('./routes/blogs/new')
+var blogUpdateRouter = require('./routes/blogs/update')
 
 var app = express();
 
@@ -44,6 +45,7 @@ app.use('/types',typeDeleteRouter)
 app.use('/tags',tagDeleteRouter)
 app.use('/blogs',blogDeleteRouter)
 app.use('/blogs',blogNewRouter)
+app.use('/blogs',blogUpdateRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

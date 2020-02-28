@@ -19,7 +19,7 @@
         <td>{{ blog.id }}</td>
         <td>{{ blog.title }}</td>
         <td><a role="button" v-on:click="deleteBlog(blog.id)">删除</a></td>
-        <td><a href="#" role="button">修改</a></td>
+        <td><a role="button" v-on:click="updateBlog(blog.id)">修改</a></td>
       </tr>
       </tbody>
     </table>
@@ -71,6 +71,11 @@ export default {
         .catch(function (err) {
           console.log(err)
         })
+    },
+    updateBlog: function (id) {
+      return this.$router.push({
+        path: '/admin/blogs/update/' + id
+      })
     }
   }
 }
