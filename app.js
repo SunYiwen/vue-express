@@ -12,8 +12,10 @@ var tagRouter = require('./routes/tag');
 var typeDeleteRouter = require('./routes/types/delete');
 var tagDeleteRouter = require('./routes/tags/delete');
 var blogDeleteRouter = require('./routes/blogs/delete');
-var blogNewRouter = require('./routes/blogs/new')
-var blogUpdateRouter = require('./routes/blogs/update')
+var blogNewRouter = require('./routes/blogs/new');
+var typeNewRouter = require('./routes/types/new');
+var tagNewRouter = require('./routes/tags/new')
+var blogUpdateRouter = require('./routes/blogs/update');
 
 var app = express();
 
@@ -41,11 +43,13 @@ app.use('/', usersRouter);
 app.use('/',blogRouter);
 app.use('/',typeRouter);
 app.use('/',tagRouter);
-app.use('/types',typeDeleteRouter)
-app.use('/tags',tagDeleteRouter)
-app.use('/blogs',blogDeleteRouter)
-app.use('/blogs',blogNewRouter)
-app.use('/blogs',blogUpdateRouter)
+app.use('/types',typeDeleteRouter);
+app.use('/tags',tagDeleteRouter);
+app.use('/blogs',blogDeleteRouter);
+app.use('/blogs',blogNewRouter);
+app.use('/types',typeNewRouter);
+app.use('/tags',tagNewRouter);
+app.use('/blogs',blogUpdateRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

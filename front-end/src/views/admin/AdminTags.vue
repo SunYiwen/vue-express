@@ -2,7 +2,7 @@
   <div>
     <b-container>
       <h1>AdminTags</h1>
-      <a href="#" role="button" class="tag_new">新增</a>
+      <a href="/admin/tags/new" role="button" class="tag_new">新增</a>
         <table class="table">
           <thead>
           <tr>

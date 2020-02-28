@@ -2,7 +2,7 @@
   <div>
     <b-container>
       <h1>AdminTypes</h1>
-      <a href="#" role="button" class="type_new">新增</a>
+      <a href="/admin/types/new" role="button" class="type_new">新增</a>
       <table class="table">
         <thead>
         <tr>

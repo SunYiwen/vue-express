@@ -12,6 +12,8 @@ import AdminTags from '../views/admin/AdminTags'
 import AdminTypes from '../views/admin/AdminTypes'
 import Welcome from '../components/Welcome'
 import BlogNew from '../components/BlogNew'
+import TypeNew from '../components/TypeNew'
+import TagNew from '../components/TagNew'
 import BlogUpdate from '../components/BlogUpdate'
 Vue.use(VueRouter)
 
@@ -54,6 +56,16 @@ const routes = [
     path: '/admin/blogs/new',
     name: 'blognew',
     component: BlogNew
+  },
+  {
+    path: '/admin/types/new',
+    name: 'typenew',
+    component: TypeNew
+  },
+  {
+    path: '/admin/tags/new',
+    name: 'tagnew',
+    component: TagNew
   },
   {
     path: '/admin/blogs/update/:id',
