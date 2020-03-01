@@ -9,6 +9,12 @@
         <b-input-group prepend="Description:" class="mb-2 mr-sm-2 mb-sm-0">
           <b-input v-model="description"></b-input>
         </b-input-group>
+        <select class="form-control" v-model="typeSelect">
+          <option v-for="type in types" v-bind:key="type._id">{{ type.type_name }}</option>
+        </select>
+        <select class="form-control" v-model="tagSelect">
+          <option v-for="tag in tags" v-bind:key="tag._id">{{ tag.tag_name }}</option>
+        </select>
         <br/>
         <br/>
         <br/>
@@ -24,7 +30,11 @@ export default {
     return {
       content: '',
       title: '',
-      description: ''
+      description: '',
+      types: [],
+      tags: [],
+      typeSelect: [],
+      tagSelect: []
     }
   },
   methods: {
@@ -33,7 +43,9 @@ export default {
       https.fetchPost('/blogs/new', {
         title: this.title,
         content: this.content,
-        description: this.description
+        description: this.description,
+        tag_name: this.tagSelect,
+        type_name: this.typeSelect
       })
         .then(function (ret) {
           console.log(ret.data)
@@ -45,6 +57,21 @@ export default {
           console.log(err)
         })
     }
+  },
+  mounted () {
+    const that = this
+    https.fetchGet('/types')
+      .then(function (types) {
+        // console.log(types)
+        that.types = types
+        return https.fetchGet('/tags')
+      })
+      .then(function (tags) {
+        that.tags = tags
+      })
+      .catch(function (err) {
+        console.log(err)
+      })
   }
 }
 </script>

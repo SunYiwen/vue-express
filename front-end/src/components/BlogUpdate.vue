@@ -9,6 +9,12 @@
       <b-input-group prepend="Description:" class="mb-2 mr-sm-2 mb-sm-0">
         <b-input v-model="description"></b-input>
       </b-input-group>
+      <select class="form-control" v-model="typeSelect">
+        <option v-for="type in types" v-bind:key="type._id">{{ type.type_name }}</option>
+      </select>
+      <select class="form-control" v-model="tagSelect">
+        <option v-for="tag in tags" v-bind:key="tag._id">{{ tag.tag_name }}</option>
+      </select>
       <br/>
       <br/>
       <br/>
@@ -25,17 +31,25 @@ export default {
       content: '',
       title: ' ',
       description: ' ',
-      id: 0
+      id: 0,
+      tags: [],
+      types: [],
+      typeSelect: [],
+      tagSelect: [],
+      tag_id: 0,
+      type_id: 0
     }
   },
   methods: {
     saveBlog: function () {
       // console.log('blog:' + typeof this.title)
-      https.fetchPost('/tags/update', {
+      https.fetchPost('/blogs/update', {
         title: this.title,
         content: this.content,
         description: this.description,
-        id: this.id
+        id: this.id,
+        tag_name: this.tagSelect,
+        type_name: this.typeSelect
       })
         .then(function (ret) {
           console.log(ret.data)
@@ -58,6 +72,25 @@ export default {
         that.title = passage.title
         that.description = passage.description
         that.id = passage.id
+        that.tag_id = passage.tag_id
+        that.type_id = passage.type_id
+        return https.fetchGet('/tags')
+      })
+      .then(function (tags) {
+        that.tags = tags
+        const tag = tags.find(function (item) {
+          return item.tag_id === that.tag_id
+        })
+        that.tagSelect = tag.tag_name
+        return https.fetchGet('/types')
+      })
+      .then(function (types) {
+        that.types = types
+        const type = types.find(function (item) {
+          return item.type_id === that.type_id
+        })
+        // console.log(type)
+        that.typeSelect = type.type_name
       })
       .catch(function (err) {
         console.log(err)
