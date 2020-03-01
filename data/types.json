@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5e5bbecc46b229237bc1a78a"},"type_name":"Nodejs","type_id":1,"__v":0}
+{"_id":{"$oid":"5e5bbed346b229237bc1a78b"},"type_name":"JavaScript","type_id":2,"__v":0}
+{"_id":{"$oid":"5e5bbedc46b229237bc1a78c"},"type_name":"Algorithm","type_id":3,"__v":0}
