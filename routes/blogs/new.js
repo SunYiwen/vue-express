@@ -19,8 +19,13 @@ router.post('/new', function(req, res, next) {
   passage.create_time = new Date()
   Passage.find()
     .then(function (ret) {
-      let id = ret[ret.length-1].id+1
-      passage.id = id
+      if(ret.length==0){
+        passage.id=1;
+      }
+      else{
+        let id = ret[ret.length-1].id+1
+        passage.id = id
+      }
       return Type.findOne({
         type_name:req.body.type_name
       })

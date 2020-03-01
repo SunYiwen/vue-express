@@ -17,7 +17,13 @@ router.post('/new', function(req, res, next) {
       }
     })
     .then(function (ret) {
-      let tag_id = ret[ret.length-1].tag_id+1
+      let tag_id
+      if(ret.length==0){
+        tag_id=1
+      }
+      else{
+        tag_id = ret[ret.length-1].tag_id+1
+      }
       let tag = {
         tag_name : req.body.tag_name,
         tag_id:tag_id

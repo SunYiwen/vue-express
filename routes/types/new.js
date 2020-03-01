@@ -17,7 +17,13 @@ router.post('/new', function(req, res, next) {
       }
     })
     .then(function (ret) {
-      let type_id = ret[ret.length-1].type_id+1
+      let type_id
+      if(ret.length==0){
+        type_id=1;
+      }
+      else{
+         type_id = ret[ret.length-1].type_id+1
+      }
       let type = {
         type_name : req.body.type_name,
         type_id:type_id
