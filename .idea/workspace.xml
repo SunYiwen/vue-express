@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c537cca-ed18-444d-bb5d-efb3b33fee83" name="Default Changelist" comment="" />
+    <list default="true" id="9c537cca-ed18-444d-bb5d-efb3b33fee83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/javascripts/mongodb/cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/front-end/node_modules/node-sass/vendor/linux-x64-72" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -96,6 +106,9 @@
       <workItem from="1582868039651" duration="16000" />
       <workItem from="1582868081814" duration="13906000" />
       <workItem from="1583065890884" duration="5588000" />
+      <workItem from="1583146602902" duration="16000" />
+      <workItem from="1584693201261" duration="1988000" />
+      <workItem from="1585226326224" duration="10115000" />
     </task>
     <servers />
   </component>
@@ -115,10 +128,10 @@
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
     <state x="635" y="337" width="763" height="440" key="#com.intellij.fileTypes.FileTypeChooser/67.34.1853.1046@67.34.1853.1046" timestamp="1582789775014" />
-    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl" timestamp="1582774848713">
+    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl" timestamp="1583146255241">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl/67.34.1853.1046@67.34.1853.1046" timestamp="1582774848713" />
+    <state x="723" y="257" width="530" height="600" key="FileChooserDialogImpl/67.34.1853.1046@67.34.1853.1046" timestamp="1583146255241" />
     <state width="1821" height="636" key="GridCell.Tab.0.bottom" timestamp="1582885626256">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
@@ -183,9 +196,9 @@
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
     <state width="1821" height="321" key="GridCell.Tab.3.right/67.34.1853.1046@67.34.1853.1046" timestamp="1582545299132" />
-    <state x="572" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1582877085255">
+    <state x="572" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1585231600864">
       <screen x="67" y="34" width="1853" height="1046" />
     </state>
-    <state x="572" y="45" width="840" height="1034" key="search.everywhere.popup/67.34.1853.1046@67.34.1853.1046" timestamp="1582877085255" />
+    <state x="572" y="45" width="840" height="1034" key="search.everywhere.popup/67.34.1853.1046@67.34.1853.1046" timestamp="1585231600864" />
   </component>
 </project>
