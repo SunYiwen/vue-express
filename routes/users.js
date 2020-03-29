@@ -11,7 +11,7 @@ router.post('/user', function(req, res, next) {
   })
     .then(function (user) {
       if(user!=null&&user.password===password){
-        let expires = new Date(Date.now() + 10000000)
+        let expires = new Date(Date.now() + 24*60*60*1000)
         res.cookie('user',user._id,{ expires: expires, path: '/', domain: 'localhost' })
         let cookie = {
           expires:expires,
