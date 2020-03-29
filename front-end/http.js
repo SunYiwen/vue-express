@@ -1,6 +1,5 @@
 import axios from 'axios'
 import qs from 'qs'
-
 axios.defaults.timeout = 5000 // 响应时间
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'// 配置请求头
 axios.defaults.baseURL = 'http://localhost:3000'// 配置接口地址
@@ -26,6 +25,11 @@ axios.interceptors.response.use((res) => {
   }
   return res
 }, (error) => {
+  console.log('status:' + typeof error.response)
+  if (error.response.status === 302) {
+    window.location = '/login'
+    console.log('重定向')
+  }
   window.console.log('网络异常')
   return Promise.reject(error)
 })
